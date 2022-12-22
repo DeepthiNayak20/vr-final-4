@@ -2,6 +2,8 @@
   position: fixed;
   left: 18rem;
   right: 0px;
+  z-index: 1;
+
 }
 
 .topBar-addCourse {

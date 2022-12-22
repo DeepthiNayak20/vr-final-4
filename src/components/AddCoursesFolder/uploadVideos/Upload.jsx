@@ -13,7 +13,14 @@ import RichTextEditor from '../richTextEditor/RichTextEditor'
 import OtherTextArea from '../otherTextArea/OtherTextArea'
 import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux'
-import { storeoverViewData } from '../../../redux/reducers/overViewSlice'
+import {
+  reset,
+  storeCategory,
+  storeName,
+  storeoverViewData,
+  storeSubCategory,
+  storeTagline,
+} from '../../../redux/reducers/overViewSlice'
 import Loading from '../../../utils/loading/loading'
 import { chapterName, storechapter } from '../../../redux/reducers/chapterSlice'
 import { storecourseId } from '../../../redux/reducers/courseIdSlice'
@@ -149,7 +156,9 @@ const Upload = () => {
           progress: undefined,
           theme: 'colored',
         })
+        // dispatch(reset())
 
+        // dispatch(storeoverViewData())
         // console.log('overview result success', res.data)
         // alert('res && res.data && res.data.message && res.data.message')
         // console.log('fgvbhmlh', res.data.message)
@@ -224,13 +233,13 @@ const Upload = () => {
         //   progress: undefined,
         //   theme: 'colored',
         // })
-        // ctghjk
 
         const text = res.data.message.split(' ')
         const courseId = text[text.length - 1]
         dispatch(storecourseId(courseId))
 
         // sdfghjk
+
         uploadVideojson(e.target.videoTitle.value)
       })
       .catch((err) => {
@@ -240,7 +249,12 @@ const Upload = () => {
   }
 
   const showModalState = useSelector((state) => state.showModal.showModal)
+  const overview = useSelector((state) => state.overViewData)
 
+  const [title, setTitle] = useState(overview.courseName)
+  const [vCategory, setvCategory] = useState(overview.categoryName)
+  const [vSubCategory, setvSubCategory] = useState(overview.subCategoryName)
+  const [taglinee, setTaglinee] = useState(overview.courseTagLine)
   return (
     <form
       onSubmit={(e) => {
@@ -262,6 +276,11 @@ const Upload = () => {
                   className="upload-inputField title"
                   required
                   autoComplete="off"
+                  value={title}
+                  onChange={(e) => {
+                    setTitle(e.target.value)
+                    dispatch(storeName(e.target.value))
+                  }}
                 />
               </div>
             </div>
@@ -271,7 +290,18 @@ const Upload = () => {
                 <div className="upload-title">Video&nbsp;Category</div>
 
                 <div className="upload-videoTitle">
-                  <select name="videoCategory" className="upload-select">
+                  <select
+                    value={vCategory}
+                    name="videoCategory"
+                    className="upload-select"
+                    onChange={(e) => {
+                      dispatch(storeCategory(e.target.value))
+                      setvCategory(e.target.value)
+                    }}
+                  >
+                    <option value="null" className="QandA-option">
+                      Select
+                    </option>
                     {videoCategory &&
                       videoCategory.map((cat, i) => {
                         // console.log('cat', cat.categoryName)
@@ -302,10 +332,21 @@ const Upload = () => {
               <div className="upload-dropDown">
                 <div className="upload-title">Video&nbsp;Sub&nbsp;Category</div>
                 <div className="upload-videoTitle">
-                  <select name="videoSubCategory" className="upload-select">
+                  <select
+                    name="videoSubCategory"
+                    className="upload-select"
+                    value={vSubCategory}
+                    onChange={(e) => {
+                      dispatch(storeSubCategory(e.target.value))
+                      setvSubCategory(e.target.value)
+                    }}
+                  >
                     {/*onfocus="this.size=10;"
                     onblur="this.size=1;"
                     onchange="this.size=1; this.blur();" */}
+                    <option value="null" className="QandA-option">
+                      Select
+                    </option>
                     {videoSubCategory &&
                       videoSubCategory.map((cat) => {
                         // console.log('cat', cat.subCategoryName)
@@ -344,6 +385,11 @@ const Upload = () => {
                   className="upload-inputField tagline"
                   required
                   autoComplete="off"
+                  value={taglinee}
+                  onChange={(e) => {
+                    dispatch(storeTagline(e.target.value))
+                    setTaglinee(e.target.value)
+                  }}
                 ></textarea>
               </div>
             </div>
@@ -408,6 +454,7 @@ const Upload = () => {
                               placeholder="Chapter Name"
                               className="upload-inputText"
                               name="chapterName"
+                              autoComplete="off"
                               required
                               onChange={(e) => {
                                 dispatch(

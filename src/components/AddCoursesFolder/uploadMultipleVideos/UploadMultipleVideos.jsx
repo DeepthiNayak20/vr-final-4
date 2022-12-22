@@ -36,6 +36,7 @@ const UploadMultipleVideos = (props) => {
             }}
             placeholder="Sub Chapter Name"
             className="uploadMultiple-inputField"
+            autoComplete="off"
           />
         </div>
       </div>
@@ -62,7 +63,14 @@ const UploadMultipleVideos = (props) => {
   //     const chosenFiles = Array.prototype.slice.call(e.target.files)
   //     console.log('chosenFiles', chosenFiles)
   //     handleUploadFiles(chosenFiles)
+
   //   }
+
+  const videoUploadData = useSelector(
+    (state) => state.chapter.chapterDataRequestList,
+  )
+
+  console.log('///', videoUploadData)
 
   return (
     <form>

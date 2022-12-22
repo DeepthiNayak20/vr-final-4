@@ -1,9 +1,14 @@
 import axios from 'axios'
 import { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import {
   storeoverViewVideo,
   storeoverViewPhoto,
+  storeoverViewData,
+  storelearningOutCome,
+  storerequirements,
+  storedifficultyLevel,
+  storecourseKeyword,
 } from '../../../redux/reducers/overViewSlice'
 import Loading from '../../../utils/loading/loading'
 import './OtherTextArea.css'
@@ -132,6 +137,13 @@ const OtherTextArea = () => {
   }
 
   // console.log('video pic link', photoLink, videoLink)
+  const overview = useSelector((state) => state.overViewData)
+  const [outcome, setOutcome] = useState(overview.learningOutCome)
+  const [require, setRequire] = useState(overview.requirements)
+  const [diff, setDiff] = useState(overview.difficultyLevel)
+  const [keyWord, setKeyWord] = useState(overview.courseKeyword)
+
+  console.log('overview', overview)
   return (
     <>
       <div className="upload-videoCategoryFileds">
@@ -140,9 +152,15 @@ const OtherTextArea = () => {
           <div className="upload-title">Course&nbsp;Outcome</div>
           <div className="textarea-tagline">
             <textarea
+              value={outcome}
+              onChange={(e) => {
+                dispatch(storelearningOutCome(e.target.value))
+                setOutcome(e.target.value)
+              }}
               name="courseOutcome"
               className="upload-inputField "
               required
+              autoComplete="off"
             ></textarea>
           </div>
         </div>
@@ -153,6 +171,12 @@ const OtherTextArea = () => {
               name="requirements"
               className="upload-inputField "
               required
+              autoComplete="off"
+              value={require}
+              onChange={(e) => {
+                dispatch(storerequirements(e.target.value))
+                setRequire(e.target.value)
+              }}
             ></textarea>
           </div>
         </div>
@@ -166,11 +190,11 @@ const OtherTextArea = () => {
             onChange={(e) => {
               uploadPhoto(e)
             }}
-            required
             name="imageUpload"
             accept="image/png, image/jpeg"
             placeholder="Video Title"
             className="upload-inputField title"
+            autoComplete="off"
           />
         </div>
         <div>
@@ -178,11 +202,11 @@ const OtherTextArea = () => {
           <input
             type="file"
             name="videoUpload"
-            required
             onChange={(e) => {
               uploadVideoPreview(e)
             }}
             accept="video/*"
+            autoComplete="off"
             placeholder="Video Category"
             className="upload-inputField category"
           />
@@ -192,7 +216,16 @@ const OtherTextArea = () => {
         <div>
           <div className="upload-title">Difficulty&nbsp;Level</div>
           <div className="upload-videoTitle">
-            <select name="difficultyLevel" className="upload-select">
+            <select
+              name="difficultyLevel"
+              className="upload-select"
+              value={diff}
+              onChange={(e) => {
+                dispatch(storedifficultyLevel(e.target.value))
+                setDiff(e.target.value)
+              }}
+            >
+              <option value=""> Select</option>
               <option value="Beginner"> Beginner</option>
               <option value="Advanced">Advanced</option>
             </select>
@@ -205,7 +238,13 @@ const OtherTextArea = () => {
             name="courseKeyWord"
             placeholder="Course Keyword"
             className="upload-inputField category"
+            autoComplete="off"
             required
+            value={keyWord}
+            onChange={(e) => {
+              dispatch(storecourseKeyword(e.target.value))
+              setKeyWord(e.target.value)
+            }}
           />
         </div>
       </div>

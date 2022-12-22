@@ -334,7 +334,7 @@
 
 @media screen and (max-width: 855px) {
   .delete-course-modal {
-    left: 47%;
+    left: 47% !important;
   }
 }
 
@@ -344,6 +344,18 @@
   }
 }
 
-@media screen and (max-width: 353px) {}
+@media screen and (max-width: 971px) {
+  .delete-course-modal {
+    left: 67%;
+  }
+}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 500px) {}
+
+@media screen and (max-width: 500px) {}
 
 @media screen and (max-width: 500px) {}

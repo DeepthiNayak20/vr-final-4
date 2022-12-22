@@ -36,6 +36,35 @@ export const overViewDataSlice = createSlice({
     storeoverViewPhoto: (state, action) => {
       state.coursePhoto = action.payload.imageUpload
     },
+    storeCategory: (state, action) => {
+      state.categoryName = action.payload
+    },
+    storeSubCategory: (state, action) => {
+      state.subCategoryName = action.payload
+    },
+    storeTagline: (state, action) => {
+      state.courseTagLine = action.payload
+    },
+    storeName: (state, action) => {
+      state.courseName = action.payload
+    },
+    storeDescriptionagain: (state, action) => {
+      state.description = action.payload
+    },
+    storelearningOutCome: (state, action) => {
+      state.learningOutCome = action.payload
+    },
+    storerequirements: (state, action) => {
+      state.requirements = action.payload
+    },
+    storedifficultyLevel: (state, action) => {
+      state.difficultyLevel = action.payload
+    },
+    storecourseKeyword: (state, action) => {
+      state.courseKeyword = action.payload
+    },
+
+    reset: () => initialState,
   },
 })
 
@@ -43,6 +72,16 @@ export const {
   storeoverViewData,
   storeoverViewVideo,
   storeoverViewPhoto,
+  storeName,
+  storeCategory,
+  storeSubCategory,
+  storeTagline,
+  storelearningOutCome,
+  storerequirements,
+  storedifficultyLevel,
+  storecourseKeyword,
+  storeDescriptionagain,
+  reset,
 } = overViewDataSlice.actions
 
 export default overViewDataSlice

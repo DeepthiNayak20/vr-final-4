@@ -87,9 +87,8 @@ const QandA = () => {
   )
 
   const questionHandler = (e) => {
-    e.preventDefault()
     // alert('alert')
-
+    // e.preventDefault()
     // console.log('ASFDSGFDGFDG', s[s.selectedIndex].id)
     // console.log(option[option.selectedIndex].id)
 
@@ -343,6 +342,7 @@ const QandA = () => {
                             </div>
                             <div className="QandA-options">
                               <input
+                                id="Option_4"
                                 type="text"
                                 className="question-options"
                                 placeholder="Option 4"
@@ -358,7 +358,7 @@ const QandA = () => {
                                 }}
                               />
 
-                              <ToggleSwitch label="option_4" index={index} />
+                              <ToggleSwitch label="Option_4" index={index} />
                             </div>
                           </div>
                         </AccordionItemPanel>
@@ -369,7 +369,7 @@ const QandA = () => {
               })}
 
               <div className="QandA-buttonSave">
-                <button type="submit" className="QandA-Button">
+                <button type="submit" className="QandA-Button" id="QandASave">
                   Save
                 </button>
               </div>

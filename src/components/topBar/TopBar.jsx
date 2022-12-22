@@ -12,6 +12,7 @@ import { useLocation } from 'react-router-dom'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { reset } from '../../redux/reducers/overViewSlice'
 
 const TopBar = () => {
   const dispatch = useDispatch()
@@ -45,6 +46,7 @@ const TopBar = () => {
           progress: undefined,
           theme: 'colored',
         })
+        dispatch(reset())
       })
       .catch((err) => {
         // alert(err.response.data)
