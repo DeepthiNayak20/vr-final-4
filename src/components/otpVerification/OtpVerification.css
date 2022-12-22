@@ -1,0 +1,61 @@
+.otp-verification {
+    font-family: ProximaNovaSoft-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 35px;
+    text-align: center;
+    color: #092963;
+}
+
+.otp-verifyText {
+    font-family: ProximaNovaSoft-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #0929639e;
+    padding: 12px 0px;
+    /* opacity: 0.6; */
+}
+
+
+.otp-otpContainer {
+    display: flex;
+    padding: 1rem 0rem;
+    align-items: center;
+    /* flex-direction: column; */
+    justify-content: center;
+}
+
+.otp-resendCode {
+    font-family: ProximaNovaSoft-Regular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    text-align: center;
+    color: #6B7FA1;
+}
+
+.otp-resend {
+    color: var(--secondaryClr)
+}
+
+button.otp-verifyButton {
+    background-color: var(--secondaryClr);
+    border: none;
+    font-family: AvenirLTStd-Book;
+    width: 330px;
+    height: 44px;
+    border-radius: 6px;
+    color: #ffffff;
+    font-family: var(--primaryFont);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 35px;
+    margin-top: 60px;
+    cursor: pointer;
+}

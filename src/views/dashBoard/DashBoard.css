@@ -1,0 +1,13 @@
+@media only screen and (max-width: 855px) {
+  .sideBar-dashBoard {
+    /* position: relative; */
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: flex-start; */
+    /* justify-content: flex-start; */
+    padding: 0 48px;
+    gap: 13.66px;
+    position: fixed;
+    bottom: 0;
+  }
+}

@@ -1,0 +1,76 @@
+.css-1mxz8qt-MuiPaper-root {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: none !important;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.css-2pbtu6-MuiTypography-root {
+  margin: 0;
+  font-family: "ProximaNovaSoft-Regular" !important;
+  font-weight: 600 !important;
+  font-size: 1.5rem !important;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+  -webkit-flex: 1 1 100%;
+  -ms-flex: 1 1 100%;
+  flex: 1 1 100%;
+}
+
+.container {
+  padding-left: 13px;
+  padding-bottom: 0rem;
+  padding-top: 15px;
+  max-width: 100% !important;
+}
+
+.MuiTypography-root {
+  margin-top: 1px !important;
+}
+
+.css-1kstezf-MuiTableCell-root{
+  padding: 0px !important;
+}
+.css-pdct74-MuiTablePagination-selectLabel {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-top: 14px;
+}
+.css-levciy-MuiTablePagination-displayedRows {
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-top: 16px;
+}
+
+@media screen and (max-width: 1550px) {
+  .MuiGrid-root.MuiGrid-container.css-11lq3yg-MuiGrid-root {
+    display: flex;
+    flex-direction: column;
+  }
+  .css-1twj35c-MuiGrid-root {
+    -webkit-flex-basis: 83.333333%;
+    -ms-flex-preferred-size: 83.333333%;
+    flex-basis: 83.333333%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 100.333333% !important;
+  }
+}

@@ -1,0 +1,237 @@
+.accordion__button:before {
+  position: absolute !important;
+  right: 49px !important;
+  margin-top: 2rem !important;
+  margin-right: -3px !important;
+}
+
+.accordion {
+  border: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 2rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.accordion__button {
+  background-color: white !important;
+}
+
+.accordion__item {
+  background: white;
+}
+
+button.QandA-button {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-right: 10px;
+}
+
+.QandA-containItem {
+  display: flex;
+  justify-content: space-between;
+}
+
+.QandA-body {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.QandA-QuestionNo {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: #989898;
+}
+
+.QandA-head {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #2b2b2b;
+  width: 80%;
+}
+
+.QandA-QuestionContainer {
+  font-family: ProximaNovaSoft-Regular;
+}
+
+.accordion__item+.accordion__item {
+  border-top: none !important;
+}
+
+input.QandA-inputText {
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #2b2b2b8c;
+  padding: 5px 17px;
+  width: 103%;
+  margin-top: 8px;
+  background: #fdfdfd;
+  border: 1px solid #d5d4dc;
+  border-radius: 5px;
+  outline: none;
+}
+
+input.QandA-inputText-success {
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #2b2b2b8c;
+  padding: 5px 17px;
+  width: 103%;
+  margin-top: 8px;
+  background: #fdfdfd;
+  border: 1px solid #fa0505;
+  border-radius: 5px;
+  outline: none;
+}
+
+button.QandA-addNewBtn {
+  font-family: ProximaNovaSoft-Regular;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: rgba(9, 41, 99, 0.11);
+  border-radius: 4px;
+  padding: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #092963;
+}
+
+.QandA-addNewContainer {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+}
+
+.question-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+input.question-options {
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  width: 80%;
+  color: #2b2b2b;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.QandA-options {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #0000002e;
+  border-radius: 3px;
+  background: #fdfdfd;
+}
+
+.QandA-chapterName {
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: #232323;
+}
+
+.QnAChapter {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.QandA-rightSide {
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 12px;
+  letter-spacing: 0.5px;
+}
+
+select.QandA-select {
+  padding-right: 12px;
+  padding: 8px 32px 8px 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  outline: none;
+  width: 129%;
+  height: 48px;
+  margin-top: 8px;
+  background: #fdfdfd;
+  border: 1px solid #d5d4dc;
+  border-radius: 8px;
+}
+
+button.QandA-Button {
+  border: none;
+  background: #ee5c4d;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  color: #ffffff;
+  cursor: pointer;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 6px 61px;
+}
+
+.QandA-buttonSave {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 500px) {
+  .QandA-body {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1118px) {
+  .question-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}

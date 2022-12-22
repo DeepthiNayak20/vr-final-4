@@ -1,0 +1,94 @@
+.active.addCourse-navLink {
+  border-bottom: 3px solid var(--secondaryClr);
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #232323;
+}
+
+a.addCourse-navLink {
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #b0b0b0;
+  text-decoration: none;
+}
+
+/* .addcourse-container {
+  display: flex;
+  gap: 6rem;
+  padding: 1rem 0rem 2rem 0;
+} */
+.addcourse-container {
+  display: flex;
+  gap: 6rem;
+  padding: 2rem 4rem 2rem 5rem;
+  background: white;
+  position: fixed;
+  left: 16rem;
+  right: 0;
+  top: 6rem;
+  z-index: 1;
+}
+
+.studentList-containerAddCourse {
+  position: absolute !important;
+  z-index: -3;
+  left: 288px;
+  top: 195.274px;
+  border-radius: 2.5em 0 0 0;
+  right: 0;
+  height: 100%;
+  background-color: #f9f9f9;
+  overflow: auto;
+  padding: 2rem;
+  /* display: none; */
+}
+
+@media only screen and (max-width: 1139px) {
+  .addcourse-container {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .active.addCourse-navLink {
+    font-size: 19px;
+  }
+
+  a.addCourse-navLink {
+    font-size: 19px;
+  }
+}
+
+@media only screen and (max-width: 855px) {
+  .addcourse-container {
+    gap: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
+    overflow: auto;
+    left: 0;
+    top: 5rem;
+    display: flex;
+
+  }
+
+  .studentList-containerAddCourse {
+
+    left: 0;
+
+  }
+
+  .studentList-containerAddCourse {
+
+    top: 163.274px;
+    border-radius: 0;
+
+  }
+
+
+
+}

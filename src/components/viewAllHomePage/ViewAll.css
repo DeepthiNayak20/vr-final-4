@@ -1,0 +1,349 @@
+.viewall-container {
+  position: relative;
+  background-color: #ffffff;
+  margin: 15px;
+  min-height: 100%;
+  overflow: auto;
+  padding: 34px;
+  border-radius: 10px;
+  z-index: -2;
+
+}
+
+.viewall-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #292929;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  cursor: pointer;
+  z-index: 0;
+  background-color: #ffffff;
+  padding-bottom: 2rem;
+  font-family: ProximaNovaSoft-Regular;
+}
+
+.Recentcourses-list {
+  position: fixed;
+  left: 338px;
+  top: 109.274px;
+  right: 0;
+  bottom: 0;
+  background-color: #f9f9f9;
+  overflow: auto;
+
+}
+
+.delete-courses {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.viewAll-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2831ff;
+  text-decoration: underline;
+}
+
+.RecentCourses-content {
+  position: relative;
+  background-color: #ffffff;
+  margin: 15px;
+  min-height: 100%;
+  overflow: auto;
+  padding: 34px;
+  border-radius: 10px;
+  z-index: -2;
+}
+
+.RecentCourses-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #292929;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 29px;
+  cursor: pointer;
+  z-index: 0;
+  background-color: #ffffff;
+  right: 15px;
+  padding-bottom: 20px;
+}
+
+.viewall-body {
+  position: relative;
+  overflow: auto;
+  z-index: -1;
+  overflow: scroll;
+  overflow: hidden;
+  /* margin-top: 2.0rem; */
+}
+
+.RecentCourses-CourseList {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 1rem;
+}
+
+.RecentCourses-Thumbnail {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.RecentCourses-thumbnail {
+  position: relative;
+  width: 134px;
+  height: 76px;
+  object-fit: cover;
+  object-position: 10% 10%;
+  border-radius: 3px;
+}
+
+.RecentCourses-thumbnail-play {
+  position: relative;
+  right: 76.5px;
+}
+
+.RecentCourses-Title {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.RecentCourses-titleContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.RecentCourses-titleContainer div {
+  padding: 6px 0px;
+  color: #1a1a1a;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+.RecentCourses-titleContainer .date-Container {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #999999;
+}
+
+
+.delete-course-modal-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  align-items: center;
+  padding: 35px;
+}
+
+.delete-course-modal-content .deleteCourse {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.delete-course-modal-content .deleteContent {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.delete-course-modal-content .buttons {
+  /* display: flex;
+  gap: 75px; */
+
+  display: flex;
+  gap: 39px;
+  margin-top: 18px;
+
+}
+
+.delete-course-modal-content .buttons button {
+  width: 210px;
+  height: 44px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.delete-course-modal-content .buttons .cancel {
+  border: 1px solid #d5d4dc !important;
+  background: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  color: #111111;
+}
+
+.delete-course-modal-content .buttons .delete {
+  border: none;
+  background: rgba(9, 41, 99, 0.2);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  color: #092963;
+}
+
+.delete-course-modal {
+  /* position: absolute;
+  width: 857px !important;
+  height: 315px !important;
+  background: #ffffff;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--primaryFont);
+  background: #fff;
+  border-radius: 12px 12px 0 0; */
+  position: absolute;
+  /* width: 857px !important; */
+  /* height: 315px !important; */
+  background: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* right: auto; */
+  /* bottom: auto; */
+  /* margin-right: -50%; */
+  transform: translate(-50%, -50%);
+  font-family: var(--primaryFont);
+  background: #fff;
+  border-radius: 12px 12px;
+}
+
+.studentList-container-1 {
+
+  padding: 0rem !important;
+
+}
+
+
+
+@media screen and (max-width: 1307px) {
+  .delete-course-modal {
+
+    left: 63%;
+
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .delete-course-modal {
+    width: 400px !important;
+    height: 270px !important;
+  }
+
+  .delete-course-modal-content .buttons {
+    gap: 11px !important;
+  }
+
+  .delete-course-modal-content .buttons button {
+    width: 159px !important;
+  }
+}
+
+@media screen and (max-width: 435px) {
+  .delete-course-modal {
+    width: 260px !important;
+    height: 270 !important;
+  }
+
+  .delete-course-modal-content .deleteContent {
+    font-size: 18px !important;
+    line-height: 22px !important;
+  }
+
+  .delete-course-modal-content .buttons button {
+    width: 111px !important;
+    height: 37px !important;
+  }
+
+  .delete-course-modal-content .buttons {
+    gap: 12px !important;
+  }
+}
+
+
+
+@media screen and (max-width: 628px) {
+  .RecentCourses-Title {
+    position: relative;
+    display: flex;
+
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .RecentCourses-titleContainer div {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .RecentCourses-titleContainer .date-Container {
+    font-size: 16px;
+  }
+}
+
+
+@media screen and (max-width: 951px) {
+  .delete-course-modal {
+    left: 66%;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .delete-course-modal {
+    left: 47%;
+  }
+}
+
+@media screen and (max-width: 1307px) {
+  .delete-course-modal {
+    left: 52%;
+  }
+}
+
+@media screen and (max-width: 353px) {}
+
+@media screen and (max-width: 500px) {}

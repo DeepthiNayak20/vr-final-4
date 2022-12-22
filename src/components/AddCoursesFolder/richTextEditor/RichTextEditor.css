@@ -1,0 +1,24 @@
+.richText-container {
+    margin-right: 20rem;
+}
+
+.ck.ck-editor__main>.ck-editor__editable:not(.ck-focused) {
+    border-color: var(--ck-color-base-border);
+    height: 20rem !important;
+}
+
+.ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
+    height: 20rem !important;
+}
+
+@media screen and (max-width: 1310px) {
+    .richText-container {
+        margin-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 1033px) {}
+
+@media screen and (max-width: 1033px) {}
+
+@media screen and (max-width: 1033px) {}

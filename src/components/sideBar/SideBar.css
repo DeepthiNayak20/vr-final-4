@@ -1,0 +1,142 @@
+.sideBarContainer {
+  position: fixed;
+  width: 18rem;
+  height: 100%;
+  left: 0;
+  top: 0px;
+  background: #ffffff;
+  border-radius: 2px;
+  color: black;
+  z-index: 0;
+}
+
+.sideBarImg {
+  width: 18rem;
+}
+
+img.sideBar-navTools {
+  width: 2rem;
+}
+
+.sideBar-linkNames {
+  text-decoration: none;
+}
+
+.sideBar-DashBoardContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px 24px;
+  width: 13rem;
+
+  border-radius: 15px;
+}
+
+.sideBar-imageContainer {
+  padding: 1rem 0rem 2rem 0rem;
+}
+
+.sideBar-dashBoard {
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 48px;
+  gap: 13.66px;
+}
+
+.active.sideBar-linkNames {
+  background-color: var(--primaryClr);
+  width: 13rem;
+  border-radius: 15px;
+}
+
+.active>.sideBar-DashBoardContainer>.sideBar-Text {
+  color: #ffffff;
+}
+
+.active>.sideBar-DashBoardContainer>.sideBar-Item>img.sideBar-navTools {
+  width: 2rem;
+  filter: invert(1);
+}
+
+.sideBar-Text {
+  display: flex;
+  color: black;
+  font-size: 17px;
+  font-weight: 700;
+  font-family: ProximaNovaSoft-Regular;
+}
+
+.btn-links {
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+button.sideBar-linkNames.btn-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+@media only screen and (max-width: 855px) {
+  .sideBarContainer {
+    height: unset;
+  }
+
+  .sideBar-dashBoard {
+    position: fixed;
+    background: white;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 0 48px;
+    gap: 13.66px;
+  }
+
+  .sideBar-DashBoardContainer {
+    width: 6rem;
+    display: grid;
+    justify-content: center;
+  }
+
+  .studentList-container {
+    left: 0 !important;
+    position: absolute !important;
+    border-radius: 0 !important;
+    background-color: #f9f9f9 !important;
+  }
+
+  .sideBar-imageContainer {
+    padding: 0.7rem 0rem 0rem 0rem;
+  }
+
+  .sideBarImg {
+    width: 13rem;
+  }
+
+  .main-board {
+    left: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .sideBar-Text {
+    display: none;
+  }
+
+  .active.sideBar-linkNames {
+    background-color: var(--primaryClr);
+    width: 6rem;
+    border-radius: 15px;
+  }
+
+  .studentList-container {
+    overflow: auto !important;
+  }
+}

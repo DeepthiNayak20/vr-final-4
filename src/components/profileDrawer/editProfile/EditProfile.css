@@ -1,0 +1,58 @@
+.editProfile-inputType {
+  display: none;
+  position: relative;
+}
+
+.editProfile-svg {
+  position: absolute;
+  z-index: 1;
+  bottom: 46px;
+  cursor: pointer;
+  /* right: 1px; */
+  /* top: 17px; */
+  /* top: 5.5rem; */
+  /* left: 13rem; */
+
+}
+
+.editProfile-output {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+
+.profile-pic {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 1rem 3rem 1rem;
+  position: relative;
+}
+
+.editProfilr-mainText {
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 35px;
+  color: #ffffff;
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+.editProfilr-color {
+  background: transparent;
+  font-family: ProximaNovaSoft-Regular !important;
+
+  color: white !important;
+  border-bottom: 1px solid #ffffff3d !important;
+}
+
+.editProfile-body {
+  border-top: 1px solid #ffffff3b;
+  padding: 2rem 3rem;
+}
+
+.changePassword-buttonContaier {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,190 @@
+.uploadMultiple-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.uploadMultiple-videos {
+
+    width: 100%;
+}
+
+.uploadMultiple-text {
+    /* padding-left: 3rem; */
+    width: 45%;
+    /* background: #00c4ff6e; */
+}
+
+.progress-balloon-value {
+    position: relative;
+    /* top: -37px; */
+    color: white;
+    bottom: 35px;
+    padding: 0px -1px;
+}
+
+
+
+.uploadMultiple-btn {
+    font-family: ProximaNovaSoft-Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 35px;
+    padding: 0px 32px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #00000029;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.uploadMultiple-btn:hover {
+    background-color: rgba(9, 41, 99, 0.2);
+}
+
+.uploadMultiple-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.uploadMultiple-inputField {
+    font-family: ProximaNovaSoft-Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #111111;
+    border-radius: 8px;
+    border: 1px solid #0000004a;
+    padding: 5px 10px;
+    outline: none;
+    width: 100%;
+}
+
+.uploadMultipleVideos-input {
+    display: none
+}
+
+.Dropzone-inputContents {
+    height: 55vh;
+    display: flex;
+    /* width: 20vw; */
+    justify-content: center;
+    align-items: center;
+    border: 1px dashed #00000061;
+}
+
+.upload-dragDrop {
+    font-family: ProximaNovaSoft-Regular;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #232323;
+    padding-bottom: 7px;
+}
+
+.upload-browse {
+    font-family: ProximaNovaSoft-Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.4px;
+    color: #232323;
+}
+
+.submit-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.button-prevNext {
+    display: flex;
+    gap: 2rem;
+    justify-content: flex-end;
+}
+
+
+
+.btn-doneBtn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.upload-centerVideo {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+    /* justify-content: center; */
+}
+
+.upload-imgUpload {
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0rem;
+}
+
+span.upload-browseColor {
+    color: blue;
+    text-decoration: underline;
+}
+
+.upload-multipleVideos {
+    background: pink;
+    padding: 1rem;
+    margin: 16px 0px;
+}
+
+@media screen and (max-width: 1033px) {
+    .uploadMultiple-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .uploadMultiple-text {
+        padding-left: 0rem;
+        /* background: #00c4ff6e; */
+    }
+}
+
+@media screen and (max-width: 437px) {
+    .uploadMultiple-inputField {
+
+        width: 158%;
+    }
+}
+
+
+
+.multiform-parent>div> :first-child {
+
+    display: none !important;
+
+}
+
+.uploadStatusMessage {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.uploadStatusMessage-success {
+    color: #1EAB0D;
+}
+
+.uploadStatusMessage-failed {
+    color: #FF0031;
+}

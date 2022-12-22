@@ -1,0 +1,449 @@
+.Certificate form {
+  padding: 3rem 3rem 0rem 3rem;
+  font-family: ProximaNovaSoft-Regular;
+}
+
+.Certificate::-webkit-scrollbar-thumb {
+  position: absolute;
+  border-radius: 10px;
+  background-color: #d4d4d4;
+}
+
+.certificateContainer {
+  height: 1000px;
+}
+
+.Certificate {
+  background: #ffffff;
+  box-shadow: 0px 2px 4px 3px rgb(0 0 0 / 6%);
+  border-radius: 6px;
+  font-family: ProximaNovaSoft-Regular;
+}
+
+.certificate-itemContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.Certificate input {
+  font-style: normal;
+  font-family: ProximaNovaSoft-Regular;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #111111;
+  background: #ffffff;
+  border: 1px solid #d5d4dc;
+  border-radius: 8px;
+  letter-spacing: 0.2px;
+  outline: none;
+  margin-top: 8px;
+}
+
+.Certificate form label {
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: #232323;
+  font-family: ProximaNovaSoft-Regular;
+}
+
+.Certificate form label input {
+  width: 88%;
+  padding: 12px;
+}
+
+.differenceInDays {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #111111;
+  margin-top: 38px;
+  font-family: ProximaNovaSoft-Regular;
+}
+
+.certificateDate {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+
+.certificateDate label input {
+  margin-right: 20px;
+  width: 100%;
+  height: 48px;
+  background: #fdfdfd;
+  border: 1px solid #d5d4dc;
+  border-radius: 8px;
+  font-family: ProximaNovaSoft-Regular;
+}
+
+.certificateNum {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 30px;
+  color: #111111;
+  padding-bottom: 2rem;
+}
+
+.certificateFooter {
+  position: absolute;
+  height: 120px;
+  background: #042c5c;
+  border-radius: 0 0 8px 8px;
+  left: 32px;
+  right: 32px;
+}
+
+.certificateFooterModal {
+  position: absolute;
+  height: 91px;
+  background: #042c5c;
+  bottom: 0;
+  border-radius: 0 0 8px 8px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+img.certificatefooterImg {
+  width: 18rem;
+  height: 5rem;
+}
+
+.certificateNumber {
+  font-size: 16px;
+  line-height: 58px;
+  color: #b3b3b3;
+}
+
+.cupImage img {
+  position: absolute;
+  right: 67px;
+  top: 10rem;
+  z-index: 1;
+}
+
+.certificate-left {
+  width: 62%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.certificateFooter svg {
+  position: absolute;
+  width: 425px;
+  bottom: 0;
+  left: 0;
+  top: 27px;
+}
+
+.certificateButtons {
+  display: flex;
+  position: relative;
+  top: 10rem;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.saveButtonn {
+  color: white;
+  outline: none;
+  border-radius: 6px;
+  padding: 5px 30px;
+  border: none;
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+}
+
+.preBtn {
+  background: #d4d4d4;
+}
+
+.savBtn {
+  background: #ee5c4d;
+}
+
+.previewButton {
+  position: absolute;
+  width: 209.81px;
+  height: 44px;
+  border: none;
+  outline: none;
+  background: #d4d4d4;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+  font-family: ProximaNovaSoft-Regular;
+}
+
+.saveButton {
+  position: absolute;
+  width: 209.81px;
+  height: 44px;
+  border: none;
+  outline: none;
+  background: #ee5c4d;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 35px;
+  text-align: center;
+  color: #ffffff;
+  font-family: ProximaNovaSoft-Regular;
+  margin-left: 260px;
+}
+
+.previewPosition {
+  top: 24px;
+  right: 24px;
+}
+
+.previewButton-close {
+  border: none;
+  background: none;
+  outline: none;
+  position: absolute;
+  cursor: pointer;
+}
+
+.preview-certificate-modal {
+  position: fixed;
+  width: 43rem;
+  height: 26rem;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--primaryFont);
+  background: #fff;
+  border-radius: 8px;
+}
+
+.ReactModal__Overlay {
+  background: rgb(0 0 0 / 35%) !important;
+}
+
+.certificate-preview-contents {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.certificate-Title {
+  color: #7a7a7a;
+  font-size: 22px;
+  font-weight: bolder;
+  line-height: 70px;
+  text-transform: capitalize;
+}
+
+.certificate-Body {
+  display: flex;
+  font-size: 16px;
+  line-height: 58px;
+  padding-top: 10px;
+  text-align: justify;
+  color: #b3b3b3;
+}
+
+.Certificate-Name {
+  color: #ec5d52;
+  font-weight: bold;
+  font-size: 28px;
+  text-transform: capitalize;
+  padding-bottom: 10px;
+}
+
+.Certificate-Course {
+  color: #2b2b2b;
+  font-size: 19px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.certificate-formm {
+  margin-bottom: 14rem;
+}
+
+.cupImageModal {
+  position: absolute;
+  right: 31px;
+  top: 7rem;
+  z-index: 1;
+}
+
+img.certificateImage {
+  height: 14rem;
+}
+
+.cerificate-overlayContent {
+  margin: 2rem;
+}
+
+@media screen and (max-width: 1360px) {
+  .cupImage img {
+    width: 345px;
+    top: 20rem;
+  }
+
+  .certificateDate {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .certificate-itemContainer {
+    display: flex;
+    flex-direction: row;
+    width: 59%;
+    gap: 2rem;
+  }
+
+  .certificate-left {
+    width: 98%;
+  }
+
+  .Certificate form label input {
+    width: 100%;
+  }
+
+  .differenceInDays {
+    margin-top: 16px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .cupImage {
+    display: none;
+  }
+
+  .certificate-itemContainer {
+    width: unset;
+  }
+
+  .certificateDate label input {
+    width: unset;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .certificateFooter {
+    display: none;
+  }
+
+  .certificateButtons {
+    top: 5rem;
+    justify-content: center;
+  }
+
+  .Certificate form {
+    padding: 1rem 1rem 0rem 1rem;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .certificateDate {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1011px) {
+  .certificateDate {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .preview-certificate-modal {
+    width: 30rem;
+  }
+
+  .certificate-Body {
+    display: flex;
+    flex-direction: column;
+    line-height: 0px;
+    gap: 22px;
+    padding: 10px 0px;
+  }
+
+  img.certificateImage {
+    height: 11rem;
+  }
+
+  .cupImageModal {
+    right: 20px;
+    top: 10rem;
+  }
+
+  .Certificate-Course {
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .preview-certificate-modal {
+    width: 23rem;
+  }
+
+  .cerificate-overlayContent {
+    margin: 1rem;
+  }
+
+  img.certificateImage {
+    height: 9rem;
+  }
+
+  .certificateFooterModal {
+    height: 83px;
+  }
+
+  img.certificatefooterImg {
+    width: 18rem;
+    height: 4rem;
+  }
+
+  .cupImageModal {
+    right: 3px;
+    top: 12.5rem;
+  }
+
+  .certificate-Title {
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1033px) {}
+
+@media screen and (max-width: 1033px) {}
+
+@media screen and (max-width: 1033px) {}
+
+@media screen and (max-width: 1033px) {}
+
+@media screen and (max-width: 1033px) {}
+
+@media screen and (max-width: 1033px) {}
+
+@media screen and (max-width: 1033px) {}

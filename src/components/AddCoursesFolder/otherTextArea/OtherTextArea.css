@@ -1,0 +1,52 @@
+.upload-videoCategoryFiles {
+    margin-right: 20rem;
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    padding-top: 10px;
+}
+
+input.otherTextArea-inputField {
+    font-family: ProximaNovaSoft-Regular;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2px;
+    color: #111111;
+    margin-top: 9px;
+    height: 3rem;
+    border-radius: 8px;
+    border: 1px solid #0000004a;
+    padding: 5px 10px;
+    outline: none;
+    /* width: 100%; */
+}
+
+.upload-difficultyLevel {
+    padding-top: 25px;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1310px) {
+    .upload-videoCategoryFiles {
+        margin-right: 0rem;
+    }
+}
+
+@media screen and (max-width: 546px) {
+    .upload-videoCategoryFiles {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 546px) {}
+
+@media screen and (max-width: 546px) {}
+
+@media screen and (max-width: 546px) {}
+
+@media screen and (max-width: 546px) {}

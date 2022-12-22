@@ -1,0 +1,87 @@
+.admin-label {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-formController {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-end;
+  /* position: fixed;
+  top: 17rem; */
+}
+
+.admin-input:focus {
+  display: flex;
+  padding: 9px;
+  font-size: 18px;
+  font-family: ProximaNovaSoft-Regular;
+  background: #ffffff;
+  border: 2px solid var(--secondaryClr);
+  border-radius: 5px;
+}
+.admin-requests {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  width: 6rem;
+  line-height: 20px;
+  color: #232323;
+  line-height: 29px;
+  outline: none;
+  border-bottom: #ee5c4d 3px solid;
+  font-family: ProximaNovaSoft-Regular;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  /* position: fixed; */
+}
+
+.admin-formContainer {
+  display: flex;
+  gap: 2rem;
+}
+button.acceptBtn {
+  position: relative;
+  left: 0;
+  right: 0;
+  color: white;
+  border: 1px solid rgba(102, 102, 102, 0.08);
+  font-family: ProximaNovaSoft-Regular;
+  /* border-collapse: collapse; */
+  /* padding: 0.8em 1em; */
+  border-radius: 13px;
+  padding: 10px 15px;
+}
+td.btnApprove {
+  text-align: center;
+}
+.accept {
+  /* background-color: var(--primaryClr); */
+  background-color: green;
+}
+.reject {
+  background-color: var(--secondaryClr);
+}
+
+@media only screen and (max-width: 1280px) {
+  .admin-formController {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .admin-formContainer {
+    flex-direction: column;
+  }
+
+  .admin-formController {
+    align-items: center;
+  }
+
+  .admin-input {
+    width: 22rem;
+  }
+}

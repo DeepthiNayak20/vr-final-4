@@ -1,0 +1,256 @@
+.upload-title {
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: #232323;
+  padding-bottom: 8px;
+}
+
+.upload-videoCategory {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+input.upload-inputField {
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #111111;
+  border-radius: 8px;
+  border: 1px solid #0000004a;
+  padding: 5px 10px;
+  outline: none;
+  width: 100%;
+  height: 3rem;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.title {
+  width: 100%;
+}
+
+.upload-discriptionTitle {
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.4px;
+  color: #10002e;
+  padding-bottom: 10px;
+}
+
+.uplaod-discriptionArea {
+  /* background: pink;
+    width: 50%;
+    height: 33vh; */
+}
+
+.upload-addDescription {
+  padding: 2rem 0rem;
+}
+
+.upload-videiTitle {
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 30px;
+}
+
+.upload-video {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+}
+
+input.upload-inputText {
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #2b2b2b8c;
+  padding: 5px 17px;
+  /* width: 50%; */
+  margin-top: 8px;
+  background: #fdfdfd;
+  border: 1px solid #d5d4dc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.upload-uploadStatus {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.2px;
+}
+
+.upload-successfully {
+  color: #1eab0d;
+}
+
+.upload-failed {
+  color: #ff0031;
+}
+
+.upload-head {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #2b2b2b;
+  width: 89%;
+  display: flex;
+  align-items: center;
+  gap: 9rem;
+}
+
+.Upload-buttonPublish {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+}
+
+.upload-tagline {
+  padding-top: 19px;
+}
+
+textarea.upload-inputField {
+  /* resize: vertical; */
+  width: 100%;
+  font-family: ProximaNovaSoft-Regular;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #111111;
+  border-radius: 4px;
+  border: 1px solid #0000004a;
+  padding: 5px 10px;
+  outline: none;
+}
+
+.textarea-tagline {
+  margin-right: 20rem;
+}
+
+.uplaod-TextArea {
+  /* background: wheat; */
+  padding-top: 24px;
+}
+
+.upload-videoTitleee {
+  margin-right: 20rem;
+}
+
+select.upload-select {
+  padding-right: 12px;
+  padding: 8px 32px 8px 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  gap: 10px;
+  outline: none;
+  /* width: 129%; */
+  height: 48px;
+  margin-top: 8px;
+  background: #fdfdfd;
+  border: 1px solid #d5d4dc;
+  border-radius: 8px;
+}
+
+.upload-videoSubCategory {
+  display: flex;
+  gap: 2rem;
+}
+
+@media screen and (max-width: 1033px) {
+  .uploadMultiple-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1310px) {
+  .textarea-tagline {
+    margin-right: 0rem;
+  }
+
+  .upload-videoTitleee {
+    margin-right: 0rem;
+  }
+}
+
+@media screen and (max-width: 853px) {
+  .upload-videoCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .upload-videoSubCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 853px) {
+  .upload-videoSubCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.upload-videoTitle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.addCategoryBtn {
+  cursor: pointer;
+  height: 36px;
+  width: 36px;
+  display: flex;
+  border-radius: 50%;
+  background-color: rgba(9, 41, 99, 0.11);
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 853px) {}
+
+@media screen and (max-width: 853px) {}
+
+@media screen and (max-width: 853px) {}
+
+@media screen and (max-width: 853px) {}
+
+@media screen and (max-width: 853px) {}

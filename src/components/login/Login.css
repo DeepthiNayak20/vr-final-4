@@ -1,0 +1,159 @@
+.login-loginContainer {
+  width: 20rem;
+  display: block;
+  /* margin: 3rem auto; */
+  /* padding: 3rem; */
+  /* border: 10px solid #999; */
+}
+
+.login-lable {
+  display: block;
+  transform: translate(0, -2.75rem);
+}
+
+.login-input {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.25rem;
+  border: none;
+  border-bottom: 2px solid #1113;
+  transition: border-color 0.2s ease;
+  font-family: AvenirLTStd-Book;
+}
+
+.login-input:focus {
+  outline: none;
+  border-color: var(--primaryClr);
+}
+
+.login-loginButton {
+  background-color: var(--secondaryClr);
+  border: none;
+  font-family: AvenirLTStd-Book;
+  width: 320px;
+  height: 44px;
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: var(--primaryFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 35px;
+  margin-top: 29px;
+  cursor: pointer;
+}
+
+button.login-signUpButton {
+  background-color: var(--secondaryClr);
+  border: none;
+  font-family: AvenirLTStd-Book;
+  width: 10rem;
+  /* height: 44px; */
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: var(--primaryFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  /* line-height: 35px; */
+  /* margin-top: 20px; */
+  cursor: pointer;
+  padding: 10px;
+}
+
+.login-forgotPassword {
+  /* text-decoration: none;
+  font-family: var(--primaryFont);
+  float: right;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+  color: var(--secondaryClr); */
+  text-decoration: none;
+  font-family: var(--primaryFont);
+  /* float: right; */
+  display: flex;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  cursor: pointer;
+  color: var(--secondaryClr);
+  justify-content: flex-end;
+}
+
+.button-loginContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  /* gap: 5px; */
+  /* margin-top: 23px; */
+}
+
+button.login-loginButtonn {
+  background-color: var(--secondaryClr);
+  border: none;
+  font-family: AvenirLTStd-Book;
+  width: 10rem;
+  /* height: 44px; */
+  border-radius: 6px;
+  color: #ffffff;
+  font-family: var(--primaryFont);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  /* line-height: 35px; */
+  /* margin-top: 20px; */
+  cursor: pointer;
+  padding: 10px;
+}
+
+input.login-input {
+  font-family: AvenirLTStd-Book;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+
+  letter-spacing: 0.4px;
+  color: var(--primaryClr);
+}
+
+.signUp-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 17px;
+  font-family: AvenirLTStd-Book;
+}
+
+span.span-btn {
+  color: var(--secondaryClr);
+  font-family: AvenirLTStd-Book;
+}
+
+.error-msg {
+  color: red;
+  margin-top: -15px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  font-family: 'AvenirLTStd-Book';
+}
+
+@supports (not (-ms-ime-align: auto)) {
+  .login-lable {
+    color: #999;
+    transform: translate(0.25rem, -1.8rem);
+    transition: all 0.2s ease-out;
+    font-family: AvenirLTStd-Book;
+  }
+
+  .login-input:focus+.login-lable,
+  .login-input:not(:placeholder-shown)+.login-lable {
+    color: #999;
+    transform: translate(0, -3.5rem);
+    font-family: AvenirLTStd-Book;
+    letter-spacing: 0.5px;
+  }
+}

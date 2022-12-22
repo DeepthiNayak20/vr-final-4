@@ -1,0 +1,50 @@
+.signUp-container {
+  /* background: red; */
+  height: 27rem;
+  overflow: auto;
+}
+
+.signUp-input {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 0.25rem;
+  border: none;
+  border-bottom: 2px solid #1113;
+  transition: border-color 0.2s ease;
+  font-family: AvenirLTStd-Book;
+  /* background: red; */
+  height: 62px;
+  outline: none;
+}
+
+.signUp-input:focus+.login-lable,
+.signUp-input:not(:placeholder-shown)+.login-lable {
+  color: #999;
+  transform: translate(0, -5.8rem);
+  font-family: AvenirLTStd-Book;
+  letter-spacing: 0.5px;
+}
+.error-msg {
+  color: red;
+  margin-top: -15px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 14px;
+  font-family: 'AvenirLTStd-Book';
+}
+
+@media screen and (max-width: 400px) {
+  .signUp-container {
+    /* background: red; */
+    height: 17rem;
+    overflow: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 400px) {}
+
+@media screen and (max-width: 400px) {}

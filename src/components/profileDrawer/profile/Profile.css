@@ -1,0 +1,100 @@
+.profile-text {
+    font-family: ProximaNovaSoft-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 35px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding-top: 2rem; */
+    padding: 2rem;
+}
+
+img.profile-imgPic {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+img.profilee-next {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+.profile.edit {
+    cursor: pointer;
+}
+
+.profile-picText {
+    font-family: ProximaNovaSoft-Regular;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+.profile-profilePic {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0rem 2rem 2rem 2rem;
+    /* padding-top: 2rem; */
+    /* padding-bottom: 2rem; */
+}
+
+.profile-capitalize {
+    text-transform: capitalize;
+}
+
+.prifile-nameStart {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.profile-NameEnd {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    /* text-align: right; */
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.profile-nameContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffffff3b;
+    padding: 1rem 0rem;
+}
+
+.profile-body {
+    border-top: 1px solid #ffffff3b;
+    padding: 0rem 2rem;
+}
+
+img.profilr-next {
+    transform: rotate(-90deg);
+    filter: invert(1);
+    height: 10px;
+}
+
+@media only screen and (max-width: 1193px) {
+    .prifile-nameStart {
+        font-size: 17px;
+    }
+
+    .profile-NameEnd {
+        font-size: 17px;
+    }
+}

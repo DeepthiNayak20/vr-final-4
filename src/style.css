@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: ProximaNovaSoft-Regular;
+}
+
+@font-face {
+  font-family: ProximaNovaSoft-Regular;
+  src: url('../src/fonts/ProximaNovaSoft-Regular.otf');
+}
+
+@font-face {
+  font-family: AvenirLTStd-Book;
+  src: url('../src/fonts/AvenirLTStd-Book.otf');
+}
+
+:root {
+  --primaryClr: #092963;
+  --secondaryClr: #ee5c4d;
+  --underlineClr: #253157;
+  --formFontClr: #7a7a7a;
+  --backgroundClr: #f9f9f9;
+  --dashboardFont: #292929;
+  --primaryFont: 'ProximaNovaSoft-Regular';
+  --secondaryFont: 'AvenirLTStd-Book';
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+button:disabled {
+  cursor: no-drop !important;
+}

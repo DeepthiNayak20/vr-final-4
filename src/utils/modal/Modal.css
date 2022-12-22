@@ -1,0 +1,39 @@
+.Modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #000000ad;
+  z-index: 999999;
+}
+
+.modalInput {
+  /* display: flex;
+
+  justify-content: space-between !important;
+  width: 100% !important;
+  margin-top: 24px !important; */
+  display: flex;
+  gap: 75px;
+  justify-content: space-between !important;
+  width: 100% !important;
+  /* margin-top: 24px !important; */
+}
+
+
+@media screen and (max-width: 1307px) {}
+
+@media screen and (max-width: 1307px) {}
+
+@media screen and (max-width: 1307px) {}
+
+@media screen and (max-width: 1307px) {}
+
+@media screen and (max-width: 1307px) {}
+
+@media screen and (max-width: 1307px) {}
+
+@media screen and (max-width: 1307px) {}
+
+@media screen and (max-width: 1307px) {}

@@ -1,0 +1,144 @@
+.dashBoard-topBar {
+  position: fixed;
+  left: 18rem;
+  right: 0px;
+}
+
+.topBar-addCourse {
+  position: relative;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 31px;
+  color: var(--dashboardFont);
+  font-family: ProximaNovaSoft-Regular;
+  /* padding-left: 24px; */
+}
+
+.topBar-Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem 1.7rem 3rem;
+  background: white;
+}
+
+img.profilee-next {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.topBar-headerIcons {
+  display: flex;
+  gap: 5rem;
+}
+
+.topBar-publish {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  background-color: var(--secondaryClr);
+  padding: 7px 14px;
+  margin: 1rem 0rem;
+  border-radius: 2px;
+}
+
+img.topBar-profileIcon {
+  position: relative;
+  border-radius: 50%;
+  width: 43.25px;
+  /* height: 52px; */
+}
+
+.topBar-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.topBar-publishText {
+  font-family: ProximaNovaSoft-Regular;
+  color: white;
+}
+
+.topBar-profileText {
+  font-family: ProximaNovaSoft-Regular;
+  text-align: center;
+  /* display: flex; */
+}
+
+.topbar-modalContainer {
+  background-color: red;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+
+
+img.topbar-closeImg {
+  width: 23px;
+}
+
+.EZDrawer .EZDrawer__checkbox:checked~.EZDrawer__container {
+  width: 30% !important;
+}
+
+.topBar-drawer {
+  background-color: var(--primaryClr);
+  min-height: 100vh;
+  padding: 2rem 0rem;
+  color: white;
+}
+
+.topBar-drawerClose {
+  padding: 0rem 2rem;
+}
+
+.topBar-drawerContainer {
+  font-family: ProximaNovaSoft-Regular;
+}
+
+@media only screen and (max-width: 939px) {
+  .topBar-Header {
+    padding: 1rem 1rem 0.7rem 1rem !important;
+    display: flex !important;
+    position: fixed !important;
+    z-index: 4 !important;
+    left: 15rem !important;
+    right: 0 !important;
+    background: white !important;
+    justify-content: flex-end !important;
+  }
+
+  .topBar-addCourse {
+    display: none;
+  }
+
+  .topBar-headerIcons {
+    gap: 2rem;
+  }
+
+  .EZDrawer .EZDrawer__checkbox:checked~.EZDrawer__container {
+    width: 40% !important;
+  }
+}
+
+@media only screen and (max-width: 1193px) {
+  .EZDrawer .EZDrawer__checkbox:checked~.EZDrawer__container {
+    width: 40% !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .EZDrawer .EZDrawer__checkbox:checked~.EZDrawer__container {
+    width: 100% !important;
+  }
+
+  .topBar-publish {
+    display: none;
+  }
+}
