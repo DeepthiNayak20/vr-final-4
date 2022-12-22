@@ -299,9 +299,6 @@ const Upload = () => {
                       setvCategory(e.target.value)
                     }}
                   >
-                    <option value="null" className="QandA-option">
-                      Select
-                    </option>
                     {videoCategory &&
                       videoCategory.map((cat, i) => {
                         // console.log('cat', cat.categoryName)
@@ -344,9 +341,7 @@ const Upload = () => {
                     {/*onfocus="this.size=10;"
                     onblur="this.size=1;"
                     onchange="this.size=1; this.blur();" */}
-                    <option value="null" className="QandA-option">
-                      Select
-                    </option>
+
                     {videoSubCategory &&
                       videoSubCategory.map((cat) => {
                         // console.log('cat', cat.subCategoryName)

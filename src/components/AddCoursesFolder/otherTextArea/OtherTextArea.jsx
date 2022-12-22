@@ -225,7 +225,6 @@ const OtherTextArea = () => {
                 setDiff(e.target.value)
               }}
             >
-              <option value=""> Select</option>
               <option value="Beginner"> Beginner</option>
               <option value="Advanced">Advanced</option>
             </select>

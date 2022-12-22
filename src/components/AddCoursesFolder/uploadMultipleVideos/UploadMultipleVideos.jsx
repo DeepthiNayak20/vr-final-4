@@ -63,14 +63,7 @@ const UploadMultipleVideos = (props) => {
   //     const chosenFiles = Array.prototype.slice.call(e.target.files)
   //     console.log('chosenFiles', chosenFiles)
   //     handleUploadFiles(chosenFiles)
-
   //   }
-
-  const videoUploadData = useSelector(
-    (state) => state.chapter.chapterDataRequestList,
-  )
-
-  console.log('///', videoUploadData)
 
   return (
     <form>

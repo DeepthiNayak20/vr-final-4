@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom'
 import EnhancedTable from '../studentListComponent/StudentListComponent'
 import './MainBoard.css'
 import Modal from 'react-modal'
+import EnhancedTabledash from '../dashboardlist/dashboardlist'
 
 const MainBoard = () => {
   const [date, setDate] = useState(new Date())
@@ -249,12 +250,12 @@ const MainBoard = () => {
               % */}
               {/* {console.log('dashboardData', dashboardData)} */}
               {dashboardData &&
-              dashboardData.overallResult &&
-              dashboardData.overallResult === ''
+                dashboardData.overallResult &&
+                dashboardData.overallResult === ''
                 ? 0
                 : dashboardData &&
-                  dashboardData.overallResult &&
-                  dashboardData.overallResult}
+                dashboardData.overallResult &&
+                dashboardData.overallResult}
               %
             </div>
           </div>
@@ -315,7 +316,7 @@ const MainBoard = () => {
         </div>
       </div>
       <div className="dashboard-table">
-        <EnhancedTable />
+        <EnhancedTabledash />
       </div>
     </div>
   )

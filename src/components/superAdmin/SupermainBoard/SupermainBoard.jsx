@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
+import axios from "axios"
 
 import './SupermainBoard.css'
 import React from 'react'
@@ -7,6 +8,7 @@ import { useSelector } from 'react-redux'
 
 const SupermainBoard = () => {
   const [date, setDate] = useState(new Date())
+  const [tabledata, settabledata] = useState([])
   const mainBoarddata = useSelector((state) => state.superAdmin.data)
   // console.log('mainBoard', mainBoarddata)
   const today = () => {
@@ -23,6 +25,22 @@ const SupermainBoard = () => {
       clearInterval(timerId)
     }
   }, [])
+
+  useEffect(() => {
+    axios
+      .get(
+        `http://virtuallearnadmin-env.eba-vvpawj4n.ap-south-1.elasticbeanstalk.com/superAdmin/admins`,
+        {
+          headers: {
+            Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+          },
+        }
+      )
+      .then((res) => {
+        settabledata(res.data);
+        console.log("tabledataaa", tabledata.listOfAdmins)
+      });
+  }, []);
 
   const adminData = [
     {
@@ -77,8 +95,8 @@ const SupermainBoard = () => {
             <div className="dashboard-block-value">
               {mainBoarddata &&
                 mainBoarddata.data &&
-                mainBoarddata.data.totalCourses &&
-                mainBoarddata.data.totalCourses}
+                mainBoarddata.data.totalNumberOfAdmins &&
+                mainBoarddata.data.totalNumberOfAdmins}
             </div>
           </div>
           <div className="dashboard-block-img">
@@ -109,8 +127,8 @@ const SupermainBoard = () => {
             <div className="dashboard-block-value">
               {mainBoarddata &&
                 mainBoarddata.data &&
-                mainBoarddata.data.totalNumberOfAdmins &&
-                mainBoarddata.data.totalNumberOfAdmins}
+                mainBoarddata.data.totalCourses &&
+                mainBoarddata.data.totalCourses}
             </div>
           </div>
           <div className="dashboard-block-img">
@@ -148,17 +166,20 @@ const SupermainBoard = () => {
             <th>Email&nbsp;Id</th>
             <th>Mobile&nbsp;No</th>
           </tr>
-          {adminData.map((item, i) => {
-            // console.log('item', item)
-            return (
-              <tr key={i}>
-                <td>{item.id}</td>
-                <td>{item.name}</td>
-                <td>{item.email}</td>
-                <td>{item.mobile}</td>
-              </tr>
-            )
-          })}
+          {mainBoarddata &&
+            mainBoarddata.data &&
+            mainBoarddata.data.listOfAdmins &&
+            mainBoarddata.data.listOfAdmins.map((item, i) => {
+              // console.log('item', item)
+              return (
+                <tr key={i}>
+                  <td>{i + 1}</td>
+                  <td>{item.fullName}</td>
+                  <td>{item.emailId}</td>
+                  <td>{item.mobileNumber}</td>
+                </tr>
+              )
+            })}
         </table>
       </div>
     </div>

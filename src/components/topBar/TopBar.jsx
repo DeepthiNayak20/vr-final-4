@@ -46,6 +46,7 @@ const TopBar = () => {
           progress: undefined,
           theme: 'colored',
         })
+        console.log('publish', res)
         dispatch(reset())
       })
       .catch((err) => {

@@ -434,6 +434,52 @@ img.certificateImage {
   }
 }
 
+@media screen and (max-width: 1270px) {
+  .preview-certificate-modal {
+
+    left: 60%;
+
+  }
+}
+
+@media screen and (max-width: 1136px) {
+  .preview-certificate-modal {
+    left: 64%;
+  }
+}
+
+@media screen and (max-width: 855px) {
+  .preview-certificate-modal {
+    left: 50%;
+  }
+}
+
+@media screen and (max-width: 1007px) {
+  .certificate-Body {
+    padding-top: -8px;
+    display: flex;
+    flex-direction: column;
+    color: #b3b3b3;
+    line-height: 0px;
+    gap: 22px;
+    padding: 10px 0px;
+  }
+
+  .preview-certificate-modal {
+
+    width: 33rem;
+
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .preview-certificate-modal {
+    width: 29rem;
+  }
+}
+
+@media screen and (max-width: 1033px) {}
+
 @media screen and (max-width: 1033px) {}
 
 @media screen and (max-width: 1033px) {}

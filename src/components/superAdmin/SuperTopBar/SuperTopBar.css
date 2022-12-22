@@ -3,7 +3,6 @@
   left: 18rem;
   right: 0px;
   z-index: 1;
-
 }
 
 .topBar-addCourse {
@@ -81,7 +80,7 @@ img.topbar-closeImg {
   cursor: pointer;
 }
 
-.EZDrawer .EZDrawer__checkbox:checked~.EZDrawer__container {
+.EZDrawer .EZDrawer__checkbox:checked ~ .EZDrawer__container {
   width: 35% !important;
 }
 
@@ -132,19 +131,19 @@ img.topbar-closeImg {
     gap: 2rem;
   }
 
-  .EZDrawer .EZDrawer__checkbox:checked~.EZDrawer__container {
+  .EZDrawer .EZDrawer__checkbox:checked ~ .EZDrawer__container {
     width: 40% !important;
   }
 }
 
 @media only screen and (max-width: 1193px) {
-  .EZDrawer .EZDrawer__checkbox:checked~.EZDrawer__container {
+  .EZDrawer .EZDrawer__checkbox:checked ~ .EZDrawer__container {
     width: 46% !important;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .EZDrawer .EZDrawer__checkbox:checked~.EZDrawer__container {
+  .EZDrawer .EZDrawer__checkbox:checked ~ .EZDrawer__container {
     width: 100% !important;
   }
 
@@ -173,12 +172,17 @@ img.topbar-closeImg {
   }
 }
 
-@media only screen and (max-width: 855px) {}
+@media only screen and (max-width: 855px) {
+}
 
-@media only screen and (max-width: 855px) {}
+@media only screen and (max-width: 855px) {
+}
 
-@media only screen and (max-width: 855px) {}
+@media only screen and (max-width: 855px) {
+}
 
-@media only screen and (max-width: 855px) {}
+@media only screen and (max-width: 855px) {
+}
 
-@media only screen and (max-width: 855px) {}
+@media only screen and (max-width: 855px) {
+}
