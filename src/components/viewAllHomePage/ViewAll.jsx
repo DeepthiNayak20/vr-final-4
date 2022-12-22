@@ -37,7 +37,7 @@ const ViewAll = () => {
   }, [])
 
   const deleteCourse = (data) => {
-    // alert(data)
+    alert(data)
     axios(
       `http://virtuallearnadmin-env.eba-vvpawj4n.ap-south-1.elasticbeanstalk.com/admin/deleteCourse?courseId=${data}`,
       {
@@ -50,6 +50,7 @@ const ViewAll = () => {
       },
     )
       .then((res) => {
+        alert(res)
         toast.success('Course deleted successfully', {
           position: 'top-right',
           autoClose: 5000,

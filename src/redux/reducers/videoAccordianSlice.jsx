@@ -1,21 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-const initialState = {
-  message: '',
-  data: {},
-  description: '',
-}
-
+const initialState = {}
 export const videoAccordianSlice = createSlice({
   name: 'videoAccordian',
   initialState,
   reducers: {
-    videoPlayerUpload: (state, action) => {
+    videoAccordion: (state, action) => {
       state.description = action.payload
     },
   },
 })
 
-export const { videoPlayerUpload } = videoAccordianSlice.actions
+export const { videoAccordion } = videoAccordianSlice.actions
 
 export default videoAccordianSlice

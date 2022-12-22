@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 18rem;
   right: 0;
   background: #000000ad;
   z-index: 999999;
@@ -22,7 +22,17 @@
 }
 
 
-@media screen and (max-width: 1307px) {}
+@media screen and (max-width: 855px) {
+  .Modal-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0rem;
+    right: 0;
+    background: #000000ad;
+    z-index: 999999;
+  }
+}
 
 @media screen and (max-width: 1307px) {}
 

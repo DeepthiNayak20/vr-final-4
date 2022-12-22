@@ -260,13 +260,21 @@
 
 
 
-@media screen and (max-width: 1307px) {
+@media screen and (max-width: 1339px) {
   .delete-course-modal {
 
     left: 63%;
 
   }
 }
+
+/* @media screen and (max-width: 855px) {
+  .delete-course-modal {
+
+    left: unset;
+
+  }
+} */
 
 @media screen and (max-width: 650px) {
   .delete-course-modal {
@@ -326,7 +334,7 @@
 }
 
 
-@media screen and (max-width: 951px) {
+/* @media screen and (max-width: 951px) {
   .delete-course-modal {
     left: 66%;
   }
@@ -348,7 +356,7 @@
   .delete-course-modal {
     left: 67%;
   }
-}
+} */
 
 @media screen and (max-width: 500px) {}
 

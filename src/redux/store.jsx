@@ -45,7 +45,7 @@ const reducers = combineReducers({
 const persistConfig = {
   key: 'root',
   storage,
-  blacklist: ['videoLink', 'lesson', 'chapter', 'test', 'showModal'],
+  blacklist: ['videoLink', 'lesson', 'chapter', 'showModal'],
 }
 const persistedReducer = persistReducer(persistConfig, reducers)
 
