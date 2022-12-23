@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { NavLink } from 'react-router-dom'
-import axios from "axios"
+import axios from 'axios'
 
 import './SupermainBoard.css'
 import React from 'react'
@@ -29,18 +29,18 @@ const SupermainBoard = () => {
   useEffect(() => {
     axios
       .get(
-        `http://virtuallearnadmin-env.eba-vvpawj4n.ap-south-1.elasticbeanstalk.com/superAdmin/admins`,
+        `http://virtuallearnadmin-env.eba-vvpawj4n.ap-south-1.elasticbeanstalk.com/superAdmin/approved/admins?pageNumber=1&limit=50`,
         {
           headers: {
-            Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+            Authorization: `Bearer ${sessionStorage.getItem('token')}`,
           },
-        }
+        },
       )
       .then((res) => {
-        settabledata(res.data);
-        console.log("tabledataaa", tabledata.listOfAdmins)
-      });
-  }, []);
+        settabledata(res.data)
+        console.log('tabledataaa', tabledata)
+      })
+  }, [])
 
   const adminData = [
     {
@@ -166,20 +166,17 @@ const SupermainBoard = () => {
             <th>Email&nbsp;Id</th>
             <th>Mobile&nbsp;No</th>
           </tr>
-          {mainBoarddata &&
-            mainBoarddata.data &&
-            mainBoarddata.data.listOfAdmins &&
-            mainBoarddata.data.listOfAdmins.map((item, i) => {
-              // console.log('item', item)
-              return (
-                <tr key={i}>
-                  <td>{i + 1}</td>
-                  <td>{item.fullName}</td>
-                  <td>{item.emailId}</td>
-                  <td>{item.mobileNumber}</td>
-                </tr>
-              )
-            })}
+          {tabledata.map((item, i) => {
+            // console.log('item', item)
+            return (
+              <tr key={i}>
+                <td>{i + 1}</td>
+                <td className="fullName-dashboard">{item.fullName}</td>
+                <td>{item.emailId}</td>
+                <td>{item.mobileNumber}</td>
+              </tr>
+            )
+          })}
         </table>
       </div>
     </div>

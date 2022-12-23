@@ -149,7 +149,7 @@ const EditProfile = () => {
               loadFile(e)
             }}
           />
-          {editData && editData.data && editData.data.profilePhoto ? (
+          {/* {editData && editData.data && editData.data.profilePhoto ? (
             <img
               src={
                 editData &&
@@ -167,8 +167,8 @@ const EditProfile = () => {
               alt="img"
               className="editProfile-output"
             />
-          )}
-          {/* <img
+          )} */}
+          <img
             src={
               editData &&
               editData.data &&
@@ -178,7 +178,7 @@ const EditProfile = () => {
             id="output"
             className="editProfile-output"
             alt=""
-          /> */}
+          />
         </div>
       </div>
 

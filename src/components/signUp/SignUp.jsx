@@ -260,14 +260,16 @@ const SignUp = () => {
                 </button>
               </div>
             </div>
-            <div
-              className="signUp-text"
-              onClick={() => {
-                navigate('/')
-              }}
-            >
+            <div className="signUp-text">
               Already have an account?&nbsp;
-              <span className="span-btn">Log&nbsp;In</span>
+              <span
+                className="span-btn"
+                onClick={() => {
+                  navigate('/')
+                }}
+              >
+                Log&nbsp;In
+              </span>
             </div>
           </div>
         </form>

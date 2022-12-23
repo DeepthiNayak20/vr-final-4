@@ -39,7 +39,7 @@ const OtpVerification = () => {
       .then((res) => {
         if (res) {
           // alert('valid otp')
-          toast.success('valid OTP', {
+          toast.success('OTP Verification successful', {
             position: 'top-right',
             autoClose: 5000,
             hideProgressBar: true,

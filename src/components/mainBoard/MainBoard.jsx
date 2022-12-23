@@ -250,13 +250,13 @@ const MainBoard = () => {
               % */}
               {/* {console.log('dashboardData', dashboardData)} */}
               {dashboardData &&
-                dashboardData.overallResult &&
-                dashboardData.overallResult === ''
-                ? 0
-                : dashboardData &&
-                dashboardData.overallResult &&
-                dashboardData.overallResult}
-              %
+              dashboardData.overallResult &&
+              dashboardData.overallResult
+                ? dashboardData &&
+                  dashboardData.overallResult &&
+                  dashboardData.overallResult
+                : 0}
+              {/* {console.log('dashhhhh', dashboardData)} */}%
             </div>
           </div>
           <div className="dashboard-block-img">

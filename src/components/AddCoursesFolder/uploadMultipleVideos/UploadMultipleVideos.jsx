@@ -59,11 +59,6 @@ const UploadMultipleVideos = (props) => {
     })
     setUploadedFiles(uploaded)
   }
-  //   const handleFileEvent = (e) => {
-  //     const chosenFiles = Array.prototype.slice.call(e.target.files)
-  //     console.log('chosenFiles', chosenFiles)
-  //     handleUploadFiles(chosenFiles)
-  //   }
 
   return (
     <form>
@@ -140,9 +135,6 @@ const UploadMultipleVideos = (props) => {
                   },
                 }),
               )
-
-              // setSubChapterName('')
-              // setcloudVideoLink('')
             }}
             disabled={cloudVideoLink === '' || subChapterName === ''}
             className="uploadMultiple-btn"

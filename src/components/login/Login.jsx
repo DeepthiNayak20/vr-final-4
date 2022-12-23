@@ -142,14 +142,16 @@ const Login = () => {
               Login
             </button>
           </div>
-          <div
-            className="signUp-text"
-            onClick={() => {
-              navigate('/signUp')
-            }}
-          >
+          <div className="signUp-text">
             Don't have an account?&nbsp;
-            <span className="span-btn">Sign&nbsp;Up</span>
+            <span
+              className="span-btn"
+              onClick={() => {
+                navigate('/signUp')
+              }}
+            >
+              Sign&nbsp;Up
+            </span>
           </div>
         </div>
       </form>

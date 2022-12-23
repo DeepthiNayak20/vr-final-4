@@ -239,7 +239,7 @@ function EnhancedTableHead(props) {
                 justifyContent: 'space-between',
               }}
               IconComponent={UnfoldMoreIcon}
-            // hideSortIcon='false'
+              // hideSortIcon='false'
             >
               <Typography
                 fontFamily="ProximaNovaSoft-Regular"
@@ -311,35 +311,36 @@ function EnhancedTableToolbar(props) {
           Total Student
         </Typography>
       )}
-      {numSelected > 0 ?
-        <div className="deletediv" >
-
-
-
+      {numSelected > 0 ? (
+        <div
+          className="deletediv"
+          onClick={() => {
+            alert('Delete status is updated')
+          }}
+        >
           <Tooltip title="Delete">
             <IconButton>
               <DeleteIcon />
             </IconButton>
           </Tooltip>
-
         </div>
-        : (
-          <Typography
-            sx={{
-              flex: '1 1 5%',
-              color: '#2831FF',
-              textDecoration: 'underline',
-              cursor: 'pointer',
-            }}
-            variant="h6"
-            id="tableTitle"
-            component="div"
-            fontFamily="ProximaNovaSoft-Regular"
-            fontSize="15px"
-          >
-            {/* <Link to="/dashBoard/studentList">View all</Link> */}
-          </Typography>
-        )}
+      ) : (
+        <Typography
+          sx={{
+            flex: '1 1 5%',
+            color: '#2831FF',
+            textDecoration: 'underline',
+            cursor: 'pointer',
+          }}
+          variant="h6"
+          id="tableTitle"
+          component="div"
+          fontFamily="ProximaNovaSoft-Regular"
+          fontSize="15px"
+        >
+          {/* <Link to="/dashBoard/studentList">View all</Link> */}
+        </Typography>
+      )}
     </Toolbar>
   )
 }
@@ -358,25 +359,24 @@ export default function EnhancedTable() {
   const [fullname, setfullname] = React.useState()
   const [courseid, setcourseid] = React.useState()
 
-
   React.useEffect(() => {
     axios
       .delete(
         `http://virtuallearnadmin-env.eba-vvpawj4n.ap-south-1.elasticbeanstalk.com/admin/deleteStudent`,
         {
           headers: {
-            Authorization: `Bearer ${sessionStorage.getItem("token")}`,
+            Authorization: `Bearer ${sessionStorage.getItem('token')}`,
           },
           data: {
-            "userName": fullname,
-            "courseId": courseid,
+            userName: fullname,
+            courseId: courseid,
           },
-        }
+        },
       )
       .then((res) => {
-        console.log("data hogattteee")
-      });
-  }, []);
+        console.log('data hogattteee')
+      })
+  }, [])
 
   const data = useSelector((state) => state.studentList.data)
   const dispatch = useDispatch()
@@ -411,9 +411,8 @@ export default function EnhancedTable() {
   const handleClick = (event, name, course) => {
     const selectedIndex = selected.indexOf(name)
     let newSelected = []
-    setfullname(name);
-    setcourseid(course);
-
+    setfullname(name)
+    setcourseid(course)
 
     if (selectedIndex === -1) {
       newSelected = newSelected.concat(selected, name)
@@ -441,7 +440,7 @@ export default function EnhancedTable() {
   }
 
   const isSelected = (name) => selected.indexOf(name) !== -1
-  console.log("selected dataa", selected)
+  console.log('selected dataa', selected)
   // Avoid a layout jump when reaching the last page with empty rows.
   const emptyRows =
     page > 0 ? Math.max(0, (1 + page) * rowsPerPage - rows.length) : 0
@@ -491,8 +490,7 @@ export default function EnhancedTable() {
                             padding="checkbox"
                             onClick={(event) => {
                               handleClick(event, row.userName, row.courseId)
-                            }
-                            }
+                            }}
                           >
                             <Checkbox
                               color="primary"
@@ -574,7 +572,25 @@ export default function EnhancedTable() {
                             }}
                           >
                             <Typography fontFamily="ProximaNovaSoft-Regular">
-                              <div className={row.courseCompletedStatus ? 'status-green' : 'status'}> <span className={row.courseCompletedStatus ? 'dot-green' : 'dot'}></span> {row.courseCompletedStatus ? "Completed" : "Ongoing"}</div>
+                              <div
+                                className={
+                                  row.courseCompletedStatus
+                                    ? 'status-green'
+                                    : 'status'
+                                }
+                              >
+                                {' '}
+                                <span
+                                  className={
+                                    row.courseCompletedStatus
+                                      ? 'dot-green'
+                                      : 'dot'
+                                  }
+                                ></span>{' '}
+                                {row.courseCompletedStatus
+                                  ? 'Completed'
+                                  : 'Ongoing'}
+                              </div>
                             </Typography>
                           </TableCell>
                           <TableCell

@@ -29,6 +29,10 @@
   align-items: flex-start;
 }
 
+td.fullName-dashboard {
+  text-transform: capitalize;
+}
+
 .today {
   width: 145px;
   height: 65px;

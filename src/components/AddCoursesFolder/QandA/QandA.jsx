@@ -22,6 +22,7 @@ import {
 import { useDispatch, useSelector } from 'react-redux'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import { reset } from '../../../redux/reducers/overViewSlice'
 
 const QandA = () => {
   const [accordian, setAccordian] = useState(false)
@@ -58,16 +59,16 @@ const QandA = () => {
       )
       .then((res) => {
         // alert('data')
-        toast.info('Data is being fetched', {
-          position: 'top-left',
-          autoClose: 10,
-          hideProgressBar: true,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: 'colored',
-        })
+        // toast.info('Data is being fetched', {
+        //   position: 'top-left',
+        //   autoClose: 10,
+        //   hideProgressBar: true,
+        //   closeOnClick: true,
+        //   pauseOnHover: true,
+        //   draggable: true,
+        //   progress: undefined,
+        //   theme: 'colored',
+        // })
         // console.log('data', res.data)
         setQandA(res.data)
         setChapterId(res.data[0].chapterId)
@@ -122,6 +123,7 @@ const QandA = () => {
           progress: undefined,
           theme: 'colored',
         })
+        dispatch(reset())
       })
       .catch((err) => {
         console.log('over view result error', err)
@@ -202,7 +204,7 @@ const QandA = () => {
                 </label>
               </div>
               <div className="QandA-rightSide">
-                1&nbsp;of&nbsp;{QandA.length}
+                Chapters:&nbsp;{QandA.length}{' '}
               </div>
             </div>
 
@@ -247,7 +249,7 @@ const QandA = () => {
                                       }}
                                     />
                                   </div>
-                                  <div className="QandA-delete">
+                                  {/* <div className="QandA-delete">
                                     {' '}
                                     <button
                                       type="button"
@@ -274,7 +276,7 @@ const QandA = () => {
                                         />
                                       </svg>
                                     </button>
-                                  </div>
+                                  </div> */}
                                 </div>
                               </div>
                             </div>

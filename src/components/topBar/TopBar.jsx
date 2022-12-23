@@ -36,7 +36,7 @@ const TopBar = () => {
       },
     )
       .then((res) => {
-        toast.success('Published successfully', {
+        toast.info(res && res.data && res.data.message, {
           position: 'top-left',
           autoClose: 5000,
           hideProgressBar: true,

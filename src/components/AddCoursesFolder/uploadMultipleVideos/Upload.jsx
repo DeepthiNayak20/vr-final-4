@@ -43,6 +43,7 @@ export default function UploadFiles({ childToParent }) {
 
     setLoading(true)
     setLoadingMessage('Preview photo is being uploaded to cloud...')
+
     const cloudName = 'dtp1d46p6'
     const uploadPreset = 'j4ygtykr'
     const url = `https://api.cloudinary.com/v1_1/${cloudName}/video/upload/`
@@ -76,7 +77,7 @@ export default function UploadFiles({ childToParent }) {
         dispatch(storevideoLink(result.data.url))
         setMessage('Video upload successful')
         setuploadedVideoLink(result.data.url)
-        document.querySelector('#save').disabled = false;
+        document.querySelector('#save').disabled = false
       })
       .catch((err) => {
         console.log(err)
@@ -107,9 +108,9 @@ export default function UploadFiles({ childToParent }) {
     width: '80%',
     backgroundColor: '#DFDFDF',
     borderRadius: 40,
-    position:"relative",
-    bottom:"8rem",
-    left:"40px",
+    position: 'relative',
+    bottom: '8rem',
+    left: '40px',
   }
 
   const Childdiv = {
@@ -132,7 +133,6 @@ export default function UploadFiles({ childToParent }) {
           {' '}
           {message !== '' ? (
             message === 'Video upload successful' ? (
-              
               <div className="upload-uploadStatus upload-successfully">
                 <svg
                   width="20"
@@ -149,7 +149,6 @@ export default function UploadFiles({ childToParent }) {
                 Videos&nbsp;upload&nbsp;successful
               </div>
             ) : (
-              
               <div className="upload-uploadStatus upload-failed">
                 <svg
                   width="20"
